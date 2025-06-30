@@ -1,20 +1,16 @@
-.desktop-nav {
+.desktop-nav, .mobile-nav {
   position: fixed;
   width: 100%;
-  top: 0;
   background-color: $bg-color;
   z-index: 10;
-  
-  @media (max-width: $breakpoint-xxl){
-    display: none;
-  }
+  top: 0;
+}
 
-  &__wrap {
-    padding: 37px 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.desktop-nav__wrap {
+  padding: 37px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   ul {
     display: flex;
@@ -24,11 +20,13 @@
   }
 
   li {
-    font-size: 18px;
-    font-weight: 500;
-    color: #F5FBF2;
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #F5FBF2;
+    }
     
-    &.active {
+    a:hover {
       color: $primary;
       text-decoration: underline 2px;
     }
@@ -42,5 +40,9 @@
     color: $primary;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    display: none;
   }
 }

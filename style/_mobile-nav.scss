@@ -1,7 +1,7 @@
 .mobile-nav {
     display: none;
 
-    @media (max-width: $breakpoint-xxl) {
+    @media (max-width: $breakpoint-lg) {
         display: block;
     }
 
@@ -23,7 +23,6 @@
 
     .mobile-nav__content {
         display: none;
-        padding: 10px 0 32px;
 
         button {
             width: 195px;
@@ -34,6 +33,7 @@
             font-size: 16px;
             font-weight: 500;
             margin: 0px auto;
+            margin-bottom: 50px;
         }
 
         .nav__list {
@@ -42,27 +42,21 @@
             gap: 24px;
             align-items: center;
             margin-bottom: 24px;
+            
             a {
+                font-size: 18px;
+                font-weight: 500;
                 color: #F5FBF2;
-                &.active {
-                    color: $primary;
-                    text-decoration: underline 2px;
-                }
-            }
-        }
-
-        .nav__buttons {
-            flex-direction: column;
-
-            button {
-                padding: 16px 20px;
-            }
+              }
+              
+              a:hover {
+                color: $primary;
+                text-decoration: underline 2px;
+              }
         }
     }
 
     &.opened {
-        height: 100vh;
-        background-color: rgba(0,0,0,0.3);
         .mobile-nav__wrap {
             border-radius: 0 0 8px 8px;
         }

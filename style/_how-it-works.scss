@@ -1,8 +1,10 @@
 .how-it-works {
     margin-top: 185px;
+    margin-bottom: 174px;
 
     h2 {
-        margin-bottom: 50px;
+        height: 130px;
+        margin-bottom: 24px;
         text-align: center;
     }
 
@@ -10,7 +12,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 154px;
         flex-wrap: wrap;
     }
     
@@ -19,7 +21,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        max-width: 220px;
         
         &__icon {
             width: 106px;
@@ -38,12 +39,9 @@
         }
         
         &__title {
-            font-family: 'Inter', sans-serif;
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 600;
             color: $primary;
-            line-height: 1.4;
-            margin: 0;
         }
     }
 }

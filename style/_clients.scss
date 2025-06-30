@@ -1,5 +1,5 @@
 .clients{
-  margin-bottom: 108px;
+  margin-bottom: 184px;
 }
 
 .clients__logos {
@@ -13,18 +13,5 @@
     max-width: 200px;
     height: auto;
     object-fit: contain;
-  }
-}
-
-@media (max-width: 375px) {
-  .clients {
-    margin-bottom: 32px;
-  }
-  .clients__logos {
-    flex-direction: column;
-    gap: 24px;
-    img {
-      max-width: 120px;
-    }
   }
 }

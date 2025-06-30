@@ -3,7 +3,6 @@
   background-color: $categories-bg-color;
     
   &__title {
-    width: 670px;
     display: flex;
     align-items: center;
     margin-bottom: 80px;
@@ -24,14 +23,16 @@
 
     h2 {
       z-index: 2;
+      line-height: 120%;
     }
   }
   
-  &__content {
+  &__cards {
     display: flex;
     gap: 42px;
     margin-bottom: 80px;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   &__navigation {
@@ -50,4 +51,79 @@
     justify-content: center;
     padding-bottom: 80px;
   }
-} 
+}
+
+.categories__card {
+  padding: 32px;
+  background-color: rgba(61, 41, 66, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.categories__author-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__author-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.categories__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categories__author-info {
+  display: flex;
+  gap: 12px;
+}
+
+.categories__author-sign {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(189, 170, 193, 1);
+}
+
+.categories__card-likes {
+  display: flex;
+  gap: 12px;
+
+  p {
+    font-weight: 400px;
+    color: rgba(189, 170, 193, 1);
+    font-size: 24px;
+  }
+
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.categories__bid-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__bid-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(198, 191, 200, 1);
+}
+
+.categories__bid-value {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.categories__btn {
+  width: 100%;
+  border: 1px rgba(253, 232, 179, 1);
+  font-weight: 500;
+  font-size: 24px;
+}

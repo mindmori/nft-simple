@@ -6,11 +6,21 @@
 }
 
 .container {
-    max-width: $container-xxl;
-    margin: 0 auto;
-  
-    @media (max-width: $breakpoint-xxl) {
-      max-width: $container-xs;
+  max-width: $container-xl;
+  margin: 0 auto;
+
+ @media (max-width: $breakpoint-xl) {
+        max-width: $container-lg;
+    }
+  @media (max-width: $breakpoint-lg) {
+        max-width: $container-md;
+    }
+  @media (max-width: $breakpoint-md) {
+        max-width: $container-sm;
+    }
+  @media (max-width: $breakpoint-sm) {
+        max-width: 100%;
+        padding: 0 12px;
     }
 }
 
@@ -38,11 +48,14 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oxanium', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    color: #F5FBF2;
-    margin: 0;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #F5FBF2;
+  margin: 0;
+  @media (max-width: $breakpoint-md) {
+    font-size: 36px;
+  }
 }
 
 a {
