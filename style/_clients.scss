@@ -1,0 +1,30 @@
+.clients{
+  margin-bottom: 108px;
+}
+
+.clients__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 132px;
+  flex-wrap: wrap;
+  
+  img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 375px) {
+  .clients {
+    margin-bottom: 32px;
+  }
+  .clients__logos {
+    flex-direction: column;
+    gap: 24px;
+    img {
+      max-width: 120px;
+    }
+  }
+}

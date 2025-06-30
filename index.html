@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <div class="container">
+                <div class="desktop-nav__wrap">
+                    <img src="img/logo.svg" alt="logo">
+                    <ul>
+                        <li><a href="" class="active">Explore</a></li>
+                        <li><a href="">Creators</a></li>
+                        <li><a href="">Community</a></li>
+                    </ul>
+                    <button>Connect Wallet</button>
+                </div>
+            </div>
+        </nav>
+        <nav class="mobile-nav opened">
+            <div class="mobile-nav__wrap">
+                <div class="container">
+                    <div class="mobile-nav__header">
+                        <img src="img/logo.svg" alt="">
+                        <button class="mobile-nav__header-button">
+                            <img src="img/menu-open.svg" alt="" class="icon_menu-open">
+                            <img src="img/menu-close.svg" alt="" class="icon_menu-close">
+                        </button>
+                    </div>
+                    <div class="mobile-nav__content">
+                        <ul class="nav__list">
+                            <li class="active"><a href="#">Explore</a></li>
+                            <li><a href="">Creators</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                        <button>Connect Wallet</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__group">
+                        <h1>Explore, Buy and Sell the <span>Best NFTs!</span></h1>
+                        
+                        <div class="hero__buttons">
+                            <button class="hero__btn hero__btn-primary">Explore</button>
+                            <button class="hero__btn hero__btn-secondary">Create</button>
+                        </div>
+                        
+                        <div class="hero__counter">
+                            <div class="hero__counter-item">
+                                <h2>32k+</h2>
+                                <p>Artworks</p>
+                            </div>
+                            <div class="hero__counter-item">
+                                <h2>20k+</h2>
+                                <p>Auctions</p>
+                            </div>
+                            <div class="hero__counter-item">
+                                <h2>12k+</h2>
+                                <p>Creators</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/hero-img.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <div class="clients__logos">
+                    <img src="img/coinbase.svg" alt="">
+                    <img src="img/blockchain.svg" alt="">
+                    <img src="img/binance.svg" alt="">
+                    <img src="img/bitmex.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="live-auctions">
+            <div class="container">
+                <div class="live-auctions__title">
+                    <div class="live-auctions__title-circle"></div>
+                    <h2>Live Auctions</h2>
+                </div>
+
+                <div class="live-auctions__navigation">
+                    <img src="img/left-arrow.svg" alt="">
+                    <img src="img/right-arrow.svg" alt="">
+                </div>
+
+                <div class="live-auctions__content">
+                    <img src="img/bid1.svg" alt="">
+                    <img src="img/bid2.svg" alt="">
+                    <img src="img/bid3.svg" alt="">
+                </div>
+                
+                <div class="live-auctions__view-all">
+                    <button class="view-all-btn">
+                        <span>View All</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How it works</h2>
+                <div class="how-it-works__steps">
+                    <div class="step">
+                        <div class="step__icon">
+                            <img src="img/wallet.svg" alt="">
+                        </div>
+                        <h3 class="step__title">Set up your wallet</h3>
+                    </div>
+                    
+                    <img src="img/connector.svg" alt="">
+
+                    <div class="step">
+                        <div class="step__icon">
+                            <img src="img/collection.svg" alt="">
+                        </div>
+                        <h3 class="step__title">Create your collection</h3>
+                    </div>
+
+                    <img src="img/connector.svg" alt="">
+                    
+                    <div class="step">
+                        <div class="step__icon">
+                            <img src="img/nft.svg" alt="">
+                        </div>
+                        <h3 class="step__title">Add your NFTs</h3>
+                    </div>
+                    
+                    <img src="img/connector.svg" alt="">
+                    
+                    <div class="step">
+                        <div class="step__icon">
+                            <img src="img/list.svg" alt="">
+                        </div>
+                        <h3 class="step__title">List them for sale</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-collections">
+            <div class="container">
+                <div class="popular-collections__title">
+                    <h2>Popular Collections</h2>
+                    <div class="popular-collections__circle"></div>
+                </div>
+                <div class="popular-collections__cards">
+                    <div class="popular-collections__card">
+                        <img src="img/collection1.png" alt="Collection 1" class="popular-collections__card-image">
+                        <div class="popular-collections__card-content">
+                            <img class="popular-collections__avatar" src="img/avatar.png" alt="Avatar">
+                            <span class="popular-collections__author">@wzard</span>
+                            <span class="popular-collections__type">ERC-721</span>
+                        </div>
+                    </div>
+                    <div class="popular-collections__card">
+                        <img src="img/collection2.png" alt="Collection 2" class="popular-collections__card-image">
+                        <div class="popular-collections__card-content">
+                            <img class="popular-collections__avatar" src="img/avatar.png" alt="Avatar">
+                            <span class="popular-collections__author">@wzard</span>
+                            <span class="popular-collections__type">ERC-721</span>
+                        </div>
+                    </div>
+                    <div class="popular-collections__card">
+                        <img src="img/collection1.png" alt="Collection 1" class="popular-collections__card-image">
+                        <div class="popular-collections__card-content">
+                            <img class="popular-collections__avatar" src="img/avatar.png" alt="Avatar">
+                            <span class="popular-collections__author">@wzard</span>
+                            <span class="popular-collections__type">ERC-721</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-collections__view-all">
+                    <button class="view-all-btn">
+                        View All
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="categories__title">
+                    <div class="categories__title-circle"></div>
+                    <h2>Explore By Categories</h2>
+                </div>
+
+                <div class="categories__content">
+                    <img src="img/c-bid1.svg" alt="">
+                    <img src="img/c-bid2.svg" alt="">
+                    <img src="img/c-bid3.svg" alt="">
+                </div>
+                
+                <div class="categories__view-all">
+                    <button class="view-all-btn">
+                        <span>View All</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="creators">
+            <div class="container">
+                <div class="creators__title">
+                    <h2>Top Creators</h2>
+                    <div class="creators__title-circle"></div>
+                </div>
+
+                <div class="creators__content">
+                    <img src="img/creator1.svg" alt="">
+                    <img src="img/creator2.svg" alt="">
+                    <img src="img/creator3.svg" alt="">
+                    <img src="img/creator4.svg" alt="">
+                </div>
+                
+                <div class="creators__view-all">
+                    <button class="view-all-btn">
+                        <span>View All</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <h2 class="subscribe__title">Ready for Next NFT Drop?</h2>
+                    <form class="subscribe__form">
+                        <input type="email" class="subscribe__input" placeholder="info@gmail.com" required>
+                        <button type="submit" class="subscribe__btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__main-group">
+                    <img src="img/logo-big.svg" alt="logo" class="footer__logo">
+                    <div class="footer__main-group-content">
+                        <p>Nec, enim sed lacus, magna pharetra.<br>Phasellus tincidunt nulla pharetra<br>gravida est.</p>
+                        <div class="footer__socials">
+                            <a href="#"><img src="img/youtube.svg" alt=""></a>
+                            <a href="#"><img src="img/twitter.svg" alt=""></a>
+                            <a href="#"><img src="img/facebook.svg" alt=""></a>
+                            <a href="#"><img src="img/google-plus.svg" alt=""></a>
+                        </div>
+                        <div class="footer__copyright">All rights reserved@2021</div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                        <h3>About Us</h3>
+                        <a href="#">About NFTs</a>
+                        <a href="#">Live Auctions</a>
+                        <a href="#">NFT Blog</a>
+                        <a href="#">Activity</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Support</h3>
+                        <a href="#">Help & Support</a>
+                        <a href="#">Item Details</a>
+                        <a href="#">Author Profile</a>
+                        <a href="#">Collection</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
